@@ -278,6 +278,37 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.0</version>
 			</plugin>	
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<wtpversion>2.0</wtpversion>
+					<additionalBuildcommands>
+						<buildcommand>org.eclipse.wst.validation.validationbuilder</buildcommand>
+						<buildcommand>org.eclipse.wst.common.project.facet.core.builder</buildcommand>
+						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
+						<buildcommand>org.eclipse.jst.j2ee.LibCopyBuilder</buildcommand>
+						<buildcommand>com.ibm.etools.siteedit.SiteNavBuilder</buildcommand>
+						<buildcommand>com.ibm.etools.siteedit.SiteUpdateBuilder</buildcommand>
+						<buildcommand>com.ibm.etools.webtools.validation.jsp.jspcompilationbuilder</buildcommand>
+						</additionalBuildcommands>
+						<additionalProjectnatures>
+							<projectnature>org.eclipse.wst.common.modulecore.ModuleCoreNature</projectnature>
+							<projectnature>com.ibm.etools.j2ee.WebNature</projectnature>
+							<projectnature>org.eclipse.jdt.core.javanature</projectnature>
+							<projectnature>com.ibm.etools.ctc.javaprojectnature</projectnature>
+							<projectnature>com.ibm.etools.beaninfo.BeaninfoNature</projectnature>
+							<projectnature>org.eclipse.wst.common.project.facet.core.nature</projectnature>
+							<projectnature>org.eclipse.wst.common.modulecore.ModuleCoreNature</projectnature>
+							<projectnature>org.eclipse.jem.workbench.JavaEMFNature</projectnature>
+							<projectnature>com.ibm.etools.siteedit.WebSiteNature</projectnature>
+						</additionalProjectnatures>
+						<classpathContainers>
+							<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+						</classpathContainers>
+						<wtpdefaultserver>Apache Tomcat v7.0</wtpdefaultserver>
+					</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
